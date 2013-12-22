@@ -7,7 +7,11 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "ANPathNode.h"
 
-@interface ANMyScene : SKScene
+@interface ANMyScene : SKScene {
+    ANPathNode * currentNode;
+    CGPoint initialPoint;
+}
 
 @end

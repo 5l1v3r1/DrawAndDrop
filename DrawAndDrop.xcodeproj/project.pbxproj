@@ -17,13 +17,14 @@
 		FA405B5B186748E6008F1C47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA405B59186748E6008F1C47 /* Main.storyboard */; };
 		FA405B5E186748E6008F1C47 /* ANViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA405B5D186748E6008F1C47 /* ANViewController.m */; };
 		FA405B61186748E6008F1C47 /* ANMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FA405B60186748E6008F1C47 /* ANMyScene.m */; };
-		FA405B63186748E6008F1C47 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = FA405B62186748E6008F1C47 /* Spaceship.png */; };
 		FA405B65186748E6008F1C47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA405B64186748E6008F1C47 /* Images.xcassets */; };
 		FA405B6C186748E6008F1C47 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA405B6B186748E6008F1C47 /* XCTest.framework */; };
 		FA405B6D186748E6008F1C47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA405B45186748E6008F1C47 /* Foundation.framework */; };
 		FA405B6E186748E6008F1C47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA405B49186748E6008F1C47 /* UIKit.framework */; };
 		FA405B76186748E6008F1C47 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA405B74186748E6008F1C47 /* InfoPlist.strings */; };
 		FA405B78186748E6008F1C47 /* DrawAndDropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA405B77186748E6008F1C47 /* DrawAndDropTests.m */; };
+		FA405B8318674AC1008F1C47 /* ANPathNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FA405B8218674AC1008F1C47 /* ANPathNode.m */; };
+		FACB11BE186766BB00AB29DC /* ANConvexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = FACB11BD186766BB00AB29DC /* ANConvexPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +54,16 @@
 		FA405B5D186748E6008F1C47 /* ANViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANViewController.m; sourceTree = "<group>"; };
 		FA405B5F186748E6008F1C47 /* ANMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANMyScene.h; sourceTree = "<group>"; };
 		FA405B60186748E6008F1C47 /* ANMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANMyScene.m; sourceTree = "<group>"; };
-		FA405B62186748E6008F1C47 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		FA405B64186748E6008F1C47 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA405B6A186748E6008F1C47 /* DrawAndDropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawAndDropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA405B6B186748E6008F1C47 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FA405B73186748E6008F1C47 /* DrawAndDropTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrawAndDropTests-Info.plist"; sourceTree = "<group>"; };
 		FA405B75186748E6008F1C47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA405B77186748E6008F1C47 /* DrawAndDropTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawAndDropTests.m; sourceTree = "<group>"; };
+		FA405B8118674AC1008F1C47 /* ANPathNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANPathNode.h; sourceTree = "<group>"; };
+		FA405B8218674AC1008F1C47 /* ANPathNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANPathNode.m; sourceTree = "<group>"; };
+		FACB11BC186766BB00AB29DC /* ANConvexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANConvexPath.h; sourceTree = "<group>"; };
+		FACB11BD186766BB00AB29DC /* ANConvexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANConvexPath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +132,10 @@
 				FA405B5D186748E6008F1C47 /* ANViewController.m */,
 				FA405B5F186748E6008F1C47 /* ANMyScene.h */,
 				FA405B60186748E6008F1C47 /* ANMyScene.m */,
-				FA405B62186748E6008F1C47 /* Spaceship.png */,
+				FA405B8118674AC1008F1C47 /* ANPathNode.h */,
+				FA405B8218674AC1008F1C47 /* ANPathNode.m */,
+				FACB11BC186766BB00AB29DC /* ANConvexPath.h */,
+				FACB11BD186766BB00AB29DC /* ANConvexPath.m */,
 				FA405B64186748E6008F1C47 /* Images.xcassets */,
 				FA405B4E186748E6008F1C47 /* Supporting Files */,
 			);
@@ -243,7 +250,6 @@
 			files = (
 				FA405B52186748E6008F1C47 /* InfoPlist.strings in Resources */,
 				FA405B65186748E6008F1C47 /* Images.xcassets in Resources */,
-				FA405B63186748E6008F1C47 /* Spaceship.png in Resources */,
 				FA405B5B186748E6008F1C47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACB11BE186766BB00AB29DC /* ANConvexPath.m in Sources */,
+				FA405B8318674AC1008F1C47 /* ANPathNode.m in Sources */,
 				FA405B54186748E6008F1C47 /* main.m in Sources */,
 				FA405B61186748E6008F1C47 /* ANMyScene.m in Sources */,
 				FA405B5E186748E6008F1C47 /* ANViewController.m in Sources */,
@@ -477,6 +485,7 @@
 				FA405B7D186748E6008F1C47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA405B7E186748E6008F1C47 /* Build configuration list for PBXNativeTarget "DrawAndDropTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +494,7 @@
 				FA405B80186748E6008F1C47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
