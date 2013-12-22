@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA405B46186748E6008F1C47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA405B45186748E6008F1C47 /* Foundation.framework */; };
+		FA405B48186748E6008F1C47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA405B47186748E6008F1C47 /* CoreGraphics.framework */; };
+		FA405B4A186748E6008F1C47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA405B49186748E6008F1C47 /* UIKit.framework */; };
+		FA405B4C186748E6008F1C47 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA405B4B186748E6008F1C47 /* SpriteKit.framework */; };
+		FA405B52186748E6008F1C47 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA405B50186748E6008F1C47 /* InfoPlist.strings */; };
+		FA405B54186748E6008F1C47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA405B53186748E6008F1C47 /* main.m */; };
+		FA405B58186748E6008F1C47 /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA405B57186748E6008F1C47 /* ANAppDelegate.m */; };
+		FA405B5B186748E6008F1C47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA405B59186748E6008F1C47 /* Main.storyboard */; };
+		FA405B5E186748E6008F1C47 /* ANViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA405B5D186748E6008F1C47 /* ANViewController.m */; };
+		FA405B61186748E6008F1C47 /* ANMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FA405B60186748E6008F1C47 /* ANMyScene.m */; };
+		FA405B63186748E6008F1C47 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = FA405B62186748E6008F1C47 /* Spaceship.png */; };
+		FA405B65186748E6008F1C47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA405B64186748E6008F1C47 /* Images.xcassets */; };
+		FA405B6C186748E6008F1C47 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA405B6B186748E6008F1C47 /* XCTest.framework */; };
+		FA405B6D186748E6008F1C47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA405B45186748E6008F1C47 /* Foundation.framework */; };
+		FA405B6E186748E6008F1C47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA405B49186748E6008F1C47 /* UIKit.framework */; };
+		FA405B76186748E6008F1C47 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA405B74186748E6008F1C47 /* InfoPlist.strings */; };
+		FA405B78186748E6008F1C47 /* DrawAndDropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA405B77186748E6008F1C47 /* DrawAndDropTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA405B6F186748E6008F1C47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA405B3A186748E6008F1C47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA405B41186748E6008F1C47;
+			remoteInfo = DrawAndDrop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA405B42186748E6008F1C47 /* DrawAndDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawAndDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA405B45186748E6008F1C47 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA405B47186748E6008F1C47 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA405B49186748E6008F1C47 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FA405B4B186748E6008F1C47 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		FA405B4F186748E6008F1C47 /* DrawAndDrop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrawAndDrop-Info.plist"; sourceTree = "<group>"; };
+		FA405B51186748E6008F1C47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA405B53186748E6008F1C47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA405B55186748E6008F1C47 /* DrawAndDrop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrawAndDrop-Prefix.pch"; sourceTree = "<group>"; };
+		FA405B56186748E6008F1C47 /* ANAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANAppDelegate.h; sourceTree = "<group>"; };
+		FA405B57186748E6008F1C47 /* ANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
+		FA405B5A186748E6008F1C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA405B5C186748E6008F1C47 /* ANViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANViewController.h; sourceTree = "<group>"; };
+		FA405B5D186748E6008F1C47 /* ANViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANViewController.m; sourceTree = "<group>"; };
+		FA405B5F186748E6008F1C47 /* ANMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANMyScene.h; sourceTree = "<group>"; };
+		FA405B60186748E6008F1C47 /* ANMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANMyScene.m; sourceTree = "<group>"; };
+		FA405B62186748E6008F1C47 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		FA405B64186748E6008F1C47 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA405B6A186748E6008F1C47 /* DrawAndDropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawAndDropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA405B6B186748E6008F1C47 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FA405B73186748E6008F1C47 /* DrawAndDropTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrawAndDropTests-Info.plist"; sourceTree = "<group>"; };
+		FA405B75186748E6008F1C47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA405B77186748E6008F1C47 /* DrawAndDropTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawAndDropTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA405B3F186748E6008F1C47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA405B48186748E6008F1C47 /* CoreGraphics.framework in Frameworks */,
+				FA405B4A186748E6008F1C47 /* UIKit.framework in Frameworks */,
+				FA405B4C186748E6008F1C47 /* SpriteKit.framework in Frameworks */,
+				FA405B46186748E6008F1C47 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA405B67186748E6008F1C47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA405B6C186748E6008F1C47 /* XCTest.framework in Frameworks */,
+				FA405B6E186748E6008F1C47 /* UIKit.framework in Frameworks */,
+				FA405B6D186748E6008F1C47 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA405B39186748E6008F1C47 = {
+			isa = PBXGroup;
+			children = (
+				FA405B4D186748E6008F1C47 /* DrawAndDrop */,
+				FA405B71186748E6008F1C47 /* DrawAndDropTests */,
+				FA405B44186748E6008F1C47 /* Frameworks */,
+				FA405B43186748E6008F1C47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA405B43186748E6008F1C47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA405B42186748E6008F1C47 /* DrawAndDrop.app */,
+				FA405B6A186748E6008F1C47 /* DrawAndDropTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA405B44186748E6008F1C47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA405B45186748E6008F1C47 /* Foundation.framework */,
+				FA405B47186748E6008F1C47 /* CoreGraphics.framework */,
+				FA405B49186748E6008F1C47 /* UIKit.framework */,
+				FA405B4B186748E6008F1C47 /* SpriteKit.framework */,
+				FA405B6B186748E6008F1C47 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA405B4D186748E6008F1C47 /* DrawAndDrop */ = {
+			isa = PBXGroup;
+			children = (
+				FA405B56186748E6008F1C47 /* ANAppDelegate.h */,
+				FA405B57186748E6008F1C47 /* ANAppDelegate.m */,
+				FA405B59186748E6008F1C47 /* Main.storyboard */,
+				FA405B5C186748E6008F1C47 /* ANViewController.h */,
+				FA405B5D186748E6008F1C47 /* ANViewController.m */,
+				FA405B5F186748E6008F1C47 /* ANMyScene.h */,
+				FA405B60186748E6008F1C47 /* ANMyScene.m */,
+				FA405B62186748E6008F1C47 /* Spaceship.png */,
+				FA405B64186748E6008F1C47 /* Images.xcassets */,
+				FA405B4E186748E6008F1C47 /* Supporting Files */,
+			);
+			path = DrawAndDrop;
+			sourceTree = "<group>";
+		};
+		FA405B4E186748E6008F1C47 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA405B4F186748E6008F1C47 /* DrawAndDrop-Info.plist */,
+				FA405B50186748E6008F1C47 /* InfoPlist.strings */,
+				FA405B53186748E6008F1C47 /* main.m */,
+				FA405B55186748E6008F1C47 /* DrawAndDrop-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA405B71186748E6008F1C47 /* DrawAndDropTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA405B77186748E6008F1C47 /* DrawAndDropTests.m */,
+				FA405B72186748E6008F1C47 /* Supporting Files */,
+			);
+			path = DrawAndDropTests;
+			sourceTree = "<group>";
+		};
+		FA405B72186748E6008F1C47 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA405B73186748E6008F1C47 /* DrawAndDropTests-Info.plist */,
+				FA405B74186748E6008F1C47 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA405B41186748E6008F1C47 /* DrawAndDrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA405B7B186748E6008F1C47 /* Build configuration list for PBXNativeTarget "DrawAndDrop" */;
+			buildPhases = (
+				FA405B3E186748E6008F1C47 /* Sources */,
+				FA405B3F186748E6008F1C47 /* Frameworks */,
+				FA405B40186748E6008F1C47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawAndDrop;
+			productName = DrawAndDrop;
+			productReference = FA405B42186748E6008F1C47 /* DrawAndDrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA405B69186748E6008F1C47 /* DrawAndDropTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA405B7E186748E6008F1C47 /* Build configuration list for PBXNativeTarget "DrawAndDropTests" */;
+			buildPhases = (
+				FA405B66186748E6008F1C47 /* Sources */,
+				FA405B67186748E6008F1C47 /* Frameworks */,
+				FA405B68186748E6008F1C47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA405B70186748E6008F1C47 /* PBXTargetDependency */,
+			);
+			name = DrawAndDropTests;
+			productName = DrawAndDropTests;
+			productReference = FA405B6A186748E6008F1C47 /* DrawAndDropTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA405B3A186748E6008F1C47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AN;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Alex Nichol";
+				TargetAttributes = {
+					FA405B69186748E6008F1C47 = {
+						TestTargetID = FA405B41186748E6008F1C47;
+					};
+				};
+			};
+			buildConfigurationList = FA405B3D186748E6008F1C47 /* Build configuration list for PBXProject "DrawAndDrop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA405B39186748E6008F1C47;
+			productRefGroup = FA405B43186748E6008F1C47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA405B41186748E6008F1C47 /* DrawAndDrop */,
+				FA405B69186748E6008F1C47 /* DrawAndDropTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA405B40186748E6008F1C47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA405B52186748E6008F1C47 /* InfoPlist.strings in Resources */,
+				FA405B65186748E6008F1C47 /* Images.xcassets in Resources */,
+				FA405B63186748E6008F1C47 /* Spaceship.png in Resources */,
+				FA405B5B186748E6008F1C47 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA405B68186748E6008F1C47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA405B76186748E6008F1C47 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA405B3E186748E6008F1C47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA405B54186748E6008F1C47 /* main.m in Sources */,
+				FA405B61186748E6008F1C47 /* ANMyScene.m in Sources */,
+				FA405B5E186748E6008F1C47 /* ANViewController.m in Sources */,
+				FA405B58186748E6008F1C47 /* ANAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA405B66186748E6008F1C47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA405B78186748E6008F1C47 /* DrawAndDropTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA405B70186748E6008F1C47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA405B41186748E6008F1C47 /* DrawAndDrop */;
+			targetProxy = FA405B6F186748E6008F1C47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA405B50186748E6008F1C47 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA405B51186748E6008F1C47 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA405B59186748E6008F1C47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA405B5A186748E6008F1C47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA405B74186748E6008F1C47 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA405B75186748E6008F1C47 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA405B79186748E6008F1C47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA405B7A186748E6008F1C47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA405B7C186748E6008F1C47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawAndDrop/DrawAndDrop-Prefix.pch";
+				INFOPLIST_FILE = "DrawAndDrop/DrawAndDrop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA405B7D186748E6008F1C47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawAndDrop/DrawAndDrop-Prefix.pch";
+				INFOPLIST_FILE = "DrawAndDrop/DrawAndDrop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FA405B7F186748E6008F1C47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DrawAndDrop.app/DrawAndDrop";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawAndDrop/DrawAndDrop-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DrawAndDropTests/DrawAndDropTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FA405B80186748E6008F1C47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DrawAndDrop.app/DrawAndDrop";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawAndDrop/DrawAndDrop-Prefix.pch";
+				INFOPLIST_FILE = "DrawAndDropTests/DrawAndDropTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA405B3D186748E6008F1C47 /* Build configuration list for PBXProject "DrawAndDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA405B79186748E6008F1C47 /* Debug */,
+				FA405B7A186748E6008F1C47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA405B7B186748E6008F1C47 /* Build configuration list for PBXNativeTarget "DrawAndDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA405B7C186748E6008F1C47 /* Debug */,
+				FA405B7D186748E6008F1C47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA405B7E186748E6008F1C47 /* Build configuration list for PBXNativeTarget "DrawAndDropTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA405B7F186748E6008F1C47 /* Debug */,
+				FA405B80186748E6008F1C47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA405B3A186748E6008F1C47 /* Project object */;
+}
